@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Formulário de Pesquisa Gamer</h1>
+        <p id="description" class="description text-center">
+            Obrigado por reservar um tempo para responder está pesquisa   
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nome</label>
+          <input
+          class="form-control"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Digite seu nome"
+          required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+          class="form-control"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Digite seu Email"
+          required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Idade</label>
+          <input
+          class="form-control"
+          id="number"
+          type="number"
+          name="age"
+          min="01"
+          max="99"
+          placeholder="Digite sua idade"
+          required
+          />
+        </div>
+        <div class="form-group">
+          <p>Qual opção melhor descreve sua função atual?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Selecione alguma das opções</option>
+            <option value="student">Estudante</option>
+            <option value="job">Trabalho integral</option>
+            <option value="learner">Aprendiz</option>
+            <option value="preferNo">Prefiro não dizer</option>
+            <option value="other">Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Você gosta de jogar video games?</p>
+          <label>
+            <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked 
+          />Definitivamente</label>
+          <label>
+            <input type="radio" name="user-recommend" value="aLittle" class="input-radio"
+          />Um pouco</label>
+          <label>
+            <input type="radio" name="user-recommend" value="not-sure" class="input-radio"
+          />Não tanto</label>
+        </div>
+        <div class="form-group">
+          <p>Quantas horas você gasta jogando diariamente?</p>
+          <select id="hours-spent" name="hours-spent" class="form-control" required>
+            <option disabled selected value>Selecione alguma das opções</option>
+            <option value="iDontPlay">Eu não jogo</option>
+            <option value="oneOrTwo">De 01:00 a 02:00 horas</option>
+            <option value="twoOrFor">De 02:00 a 04:00 horas</option>
+            <option value="fourOrSix">De 04:00 a 06:00 horas</option>
+            <option value="other">Mais de 06:00 horas</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Qual seu estilo de jogo preferido</p>
+
+          <label
+            ><input
+              name="prefer"
+              value="fps"
+              type="checkbox"
+              class="input-checkbox"
+            />Fps</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="moba"
+              type="checkbox"
+              class="input-checkbox"
+            />Moba</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="rpg"
+              type="checkbox"
+              class="input-checkbox"
+            />Rpg</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="mmorpg"
+              type="checkbox"
+              class="input-checkbox"
+            />Mmorpg</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="horror"
+              type="checkbox"
+              class="input-checkbox"
+            />Terro</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="strategy"
+              type="checkbox"
+              class="input-checkbox"
+            />Estratégia</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="puzzles"
+              type="checkbox"
+              class="input-checkbox"
+            />Puzzles</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="card-game"
+              type="checkbox"
+              class="input-checkbox"
+            />Card games</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="any"
+              type="checkbox"
+              class="input-checkbox"
+            />Nenhum</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Fale sobre seu jogo favorito:</p>
+            <textarea 
+              id="bio"
+              name="fav-game"
+              rows="3" 
+              cols="30" 
+              placeholder="Meu jogo favorito é..."
+              class="input-textarea"
+              ></textarea>
+          
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+
+</html>
